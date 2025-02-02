@@ -1,5 +1,5 @@
 # GreenBrowse
-## Grade: 14,4/20
+## Grade: 14.4/20
 ## LTW Project -> Class 12 G05
 
 - João Sousa | up201904739
