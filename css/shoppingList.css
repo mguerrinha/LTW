@@ -1,0 +1,234 @@
+/* ShoppingList CSS */
+
+.shopping-list-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px 10%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cart-details {
+  width: 95%;
+  padding: 20px;
+  padding-top: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.shopping-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.item-info {
+  justify-content: space-around;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cart-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 25px;
+  border: 1px solid #ccc;
+}
+
+.remove-from-shopping-list {
+  min-width: 50px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.checkout-area {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  padding-top: 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.checkout-area h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.checkout-area .form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.checkout-area .form-group span:first-child {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkout-area .form-group span:last-child {
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.checkout-area .form-group input[type="text"] {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.checkout-area .form-group .payment-methods {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.checkout-area .form-group .payment-methods input[type="radio"] {
+  display: none;
+}
+
+.checkout-area .form-group .payment-methods label {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-area
+  .form-group
+  .payment-methods
+  input[type="radio"]:checked
+  + label {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.checkout-area .checkout-button {
+  display: block;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.checkout-area .checkout-button:hover {
+  background-color: #45a049;
+}
+
+.checkout-area .checkout-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4caf50;
+}
+
+@media screen and (max-width: 768px) {
+  .shopping-list-page {
+    grid-template-columns: 1fr;
+    padding: 10px 5%;
+    align-items: center;
+  }
+
+  .cart-details {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .checkout-area {
+    width: 100%;
+  }
+
+  .checkout-area .checkout-button {
+    font-size: 18px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .shopping-list-page {
+    padding: 10px 2%;
+  }
+
+  .cart-details {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .checkout-area .checkout-button {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .checkout-area .form-group input[type="text"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .checkout-area .form-group .payment-methods label {
+    padding: 8px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shopping-list-page {
+    padding: 10px 1%;
+  }
+
+  .cart-details {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .checkout-area .checkout-button {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .checkout-area .form-group input[type="text"] {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .checkout-area .form-group .payment-methods label {
+    padding: 6px 8px;
+  }
+}

@@ -1,0 +1,445 @@
+.profile-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+}
+
+.left-side {
+  margin-left: 30%;
+  margin-right: 5%;
+}
+
+.left-side h1 {
+  margin: 0;
+  margin-top: 10px;
+  color: #103428;
+}
+
+.left-side h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #103428;
+}
+
+.left-side h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #103428;
+}
+
+.left-side p {
+  margin: 0;
+}
+
+.profile-details p {
+  margin: 0;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.profile-details a {
+  text-decoration: none;
+}
+
+.profile-details p:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.account-panel button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.account-panel button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.account-panel button a:hover {
+  color: #5a9e7c;
+}
+
+.account-panel button:hover {
+  color: #5a9e7c;
+}
+
+.account-panel {
+  display: grid;
+  padding: 20px;
+  background-color: #83cc617e;
+  border: 1px solid #5a9e7c;
+  margin-bottom: 10px;
+  text-align: start;
+  justify-content: start;
+}
+
+.account-panel button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: start;
+}
+
+.need-help {
+  padding: 20px;
+
+  background-color: #83cc617e;
+  border: 1px solid #5a9e7c;
+}
+
+.right-side {
+  margin-right: 10%;
+}
+
+.right-side h1 {
+  margin-top: 10px;
+  margin-bottom: 28px;
+  color: #103428;
+}
+
+.right-side h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #103428;
+}
+
+.personal-data {
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: #83cc617e;
+  border: 1px solid #5a9e7c;
+}
+
+.change-password {
+  padding: 20px;
+  background-color: #83cc617e;
+  border: 1px solid #5a9e7c;
+}
+
+.form-group {
+  margin-right: 20px;
+}
+
+.edit-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f4f4f4;
+  padding: 20px;
+  padding-right: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #5a9e7c8e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.edit-profile button {
+  margin-top: 10px;
+  align-items: center;
+  width: 60%;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #5a9e7c8e, #5a9e7c);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.reset-pass {
+  background: #f4f4f4;
+  padding: 20px;
+  padding-right: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+input[type="password"] {
+  font-size: 16px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #5a9e7c8e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.change-password .form-group:nth-child(2) {
+  display: grid;
+  grid-row: span 2;
+  align-items: end;
+}
+
+.change-password .form-group:nth-child(2) label {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: end;
+  margin-top: 70px;
+}
+
+.form-group label {
+  margin-left: 5px;
+  height: fit-content;
+}
+
+.reset-pass button {
+  margin-top: 10px;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #5a9e7c8e, #5a9e7c);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.my-orders {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #83cc617e;
+  border: 1px solid #5a9e7c;
+  margin-bottom: 10px;
+  justify-content: start;
+}
+
+.order {
+  width: calc(25% - 40px);
+  height: 390px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.order img {
+  width: 78%;
+  height: 82%;
+}
+
+.order p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.order.sold img {
+  filter: grayscale(100%);
+}
+
+.sold-label {
+  color: red;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .left-side {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .right-side {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .edit-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .reset-pass {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .personal-data {
+    padding: 20px;
+  }
+
+  .change-password {
+    padding: 20px;
+  }
+
+  .form-group:nth-child(2) label {
+    width: fit-content;
+    height: fit-content;
+    align-items: end;
+    margin-top: 0;
+  }
+
+  .my-orders {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .order {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .profile-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .left-side {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .right-side {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .edit-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .reset-pass {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .personal-data {
+    padding: 20px;
+  }
+
+  .change-password {
+    padding: 20px;
+  }
+
+  .form-group:nth-child(2) label {
+    width: fit-content;
+    height: fit-content;
+    align-items: end;
+    margin-top: 0;
+  }
+
+  .my-orders {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .order {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .left-side {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .right-side {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .edit-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .reset-pass {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .personal-data {
+    padding: 20px;
+  }
+
+  .change-password {
+    padding: 20px;
+  }
+
+  .form-group:nth-child(2) label {
+    width: fit-content;
+    height: fit-content;
+    align-items: end;
+    margin-top: 0;
+  }
+
+  .my-orders {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .order {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    height: fit-content;
+  }
+}

@@ -1,0 +1,91 @@
+#notifications {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  width: 300px;
+}
+
+#notifications article {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#notifications article.success {
+  background-color: #4caf50;
+}
+
+#notifications article.error {
+  background-color: #f44336;
+}
+
+#notifications article.warning {
+  background-color: #ffc107;
+  color: #000;
+}
+
+#notifications article.info {
+  background-color: #2196f3;
+}
+
+#notifications article i {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #notifications {
+    top: 10px;
+    left: 10px;
+    width: 250px;
+  }
+
+  #notifications article {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  #notifications article i {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #notifications {
+    top: 5px;
+    left: 5px;
+    width: 200px;
+  }
+
+  #notifications article {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  #notifications article i {
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #notifications {
+    top: 5px;
+    left: 5px;
+    width: 180px;
+  }
+
+  #notifications article {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  #notifications article i {
+    margin-right: 5px;
+  }
+}

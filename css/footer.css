@@ -1,0 +1,136 @@
+/* Footer CSS */
+
+footer {
+  background-image: linear-gradient(#f1f1f1, #83cc61);
+  text-align: center;
+  padding: 10px 0;
+  padding-bottom: 0;
+  font-size: 14px;
+  max-height: fit-content;
+}
+
+.footer-container {
+  display: flex;
+  text-align: start;
+  align-items: flex-start;
+  justify-content: space-around;
+  border-bottom: 1px solid #00000073;
+}
+
+.footer-container div {
+  padding: 20px;
+}
+
+.footer-container a {
+  text-decoration: none;
+}
+
+.footer-container h3 {
+  color: #103428;
+  border-bottom: 2px solid #5a9e7c;
+}
+
+.footer-container a,
+p {
+  color: black;
+}
+
+.footer-logo img {
+  height: 10%;
+  width: 150px;
+}
+
+.footer-links ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  text-align: start;
+}
+
+.footer-links ul li {
+  padding: 0 20px;
+  padding-left: 0;
+}
+
+.rights-reserved h4 {
+  margin: 0;
+  padding: 20px;
+  color: #103428;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: start;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  .footer-logo {
+    grid-column: span 3;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .footer-logo {
+    grid-column: span 1;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-container div {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .footer-logo {
+    grid-column: span 1;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-container div {
+    padding: 10px;
+  }
+
+  .footer-container h3 {
+    text-align: center;
+  }
+
+  .rights-reserved h4 {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
